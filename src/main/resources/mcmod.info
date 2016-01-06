@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "hammertime",
+    "name": "Hammer Time!",
+    "description": "A mod that adds 3D modeled tools to Minecraft",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["EwyBoy"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

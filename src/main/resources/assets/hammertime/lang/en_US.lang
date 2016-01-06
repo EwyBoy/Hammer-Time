@@ -1,0 +1,32 @@
+#Hammer Time English Lang File
+
+#Hammer Names
+item.HammerWood.name=Wooden Sledgehammer
+item.HammerStone.name=Stone Sledgehammer
+item.HammerIron.name=Iron Sledgehammer
+item.HammerGold.name=Golden Sledgehammer
+item.HammerDiamond.name=Diamond Sledgehammer
+
+#Excavator Names
+item.ExcavatorWood.name=Wooden Excavator
+item.ExcavatorStone.name=Stone Excavator
+item.ExcavatorIron.name=Iron Excavator
+item.ExcavatorGold.name=Golden Excavator
+item.ExcavatorDiamond.name=Diamond Excavator
+
+#LumberAxe Names
+item.LumberAxeWood.name=Wooden Lumber Axe
+item.LumberAxeStone.name=Stone Lumber Axe
+item.LumberAxeIron.name=Iron Lumber Axe
+item.LumberAxeGold.name=Golden Lumber Axe
+item.LumberAxeDiamond.name=Diamond Lumber Axe
+
+#Sickle Names
+item.SickleWood.name=Wooden Sickle
+item.SickleStone.name=Stone Sickle
+item.SickleIron.name=Iron Sickle
+item.SickleGold.name=Golden Sickle
+item.SickleDiamond.name=Diamond Sickle
+
+#CreativeTab Names
+itemGroup.HammerTimeCreativeTab=Hammer Time!
