@@ -79,6 +79,8 @@ public class Sickle extends BaseTool {
                 block.onBlockDestroyedByPlayer(world, x, y, z, meta);
                 block.harvestBlock(world, player, x, y, z, meta);
                 block.dropXpOnBlockBreak(world, x, y, z, event.getExpToDrop());
+                if(!player.capabilities.isCreativeMode)
+                    stack.damageItem(1,player);
             }
             player.playerNetServerHandler.sendPacket(new S23PacketBlockChange(x, y, z, world));
         } else {
