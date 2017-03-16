@@ -1,3 +1,4 @@
+/**
 package com.ewyboy.hammertime.common.tools;
 
 import com.ewyboy.hammertime.common.loaders.ConfigLoader;
@@ -138,3 +139,4 @@ public class Sickle extends BaseTool {
         return super.onBlockStartBreak(stack, x, y, z, player);
     }
 }
+ */

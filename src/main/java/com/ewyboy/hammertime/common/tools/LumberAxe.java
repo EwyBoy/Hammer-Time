@@ -1,3 +1,4 @@
+/**
 package com.ewyboy.hammertime.common.tools;
 
 import com.ewyboy.hammertime.common.loaders.CreativeTabLoader;
@@ -101,3 +102,4 @@ public class LumberAxe extends ItemAxe {
         }
     }
 }
+ */

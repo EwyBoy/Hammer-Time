@@ -9,16 +9,16 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class ModelExcavator extends ModelBase {
 
-    public ModelRenderer Rod;
-    public ModelRenderer HandleBottom;
-    public ModelRenderer HandelTop;
-    public ModelRenderer HandelSide1;
-    public ModelRenderer HandelSide2;
-    public ModelRenderer Head;
-    public ModelRenderer HeadSide2;
-    public ModelRenderer HeadSide1;
-    public ModelRenderer HeadBottom;
-    public ModelRenderer HandleSupport;
+    private ModelRenderer Rod;
+    private ModelRenderer HandleBottom;
+    private ModelRenderer HandelTop;
+    private ModelRenderer HandelSide1;
+    private ModelRenderer HandelSide2;
+    private ModelRenderer Head;
+    private ModelRenderer HeadSide2;
+    private ModelRenderer HeadSide1;
+    private ModelRenderer HeadBottom;
+    private ModelRenderer HandleSupport;
 
     public ModelExcavator() {
         this.textureWidth = 32;

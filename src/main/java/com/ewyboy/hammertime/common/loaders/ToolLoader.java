@@ -1,3 +1,4 @@
+/**
 package com.ewyboy.hammertime.common.loaders;
 
 import com.ewyboy.hammertime.common.tools.Excavator;
@@ -45,3 +46,4 @@ public class ToolLoader {
         Logger.info("Loading tools finished after " + watch.elapsed(TimeUnit.MILLISECONDS) + "ms");
     }
 }
+ */

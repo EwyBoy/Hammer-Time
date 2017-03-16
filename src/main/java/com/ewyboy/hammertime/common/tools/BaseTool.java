@@ -1,3 +1,4 @@
+/**
 package com.ewyboy.hammertime.common.tools;
 
 import net.minecraft.entity.Entity;
@@ -35,3 +36,4 @@ public class BaseTool extends ItemPickaxe {
         return world.func_147447_a(vec3, vec31, par3, !par3, par3);
     }
 }
+ */

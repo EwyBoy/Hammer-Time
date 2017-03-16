@@ -9,13 +9,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class ModelHammer extends ModelBase {
 
-    public ModelRenderer Rod;
-    public ModelRenderer CapBottom;
-    public ModelRenderer CapTop;
-    public ModelRenderer HammerHead;
-    public ModelRenderer HammerCapTop;
-    public ModelRenderer HammerCapBack;
-    public ModelRenderer HammerCapFront;
+    private ModelRenderer Rod;
+    private ModelRenderer CapBottom;
+    private ModelRenderer CapTop;
+    private ModelRenderer HammerHead;
+    private ModelRenderer HammerCapTop;
+    private ModelRenderer HammerCapBack;
+    private ModelRenderer HammerCapFront;
 
     public ModelHammer() {
         this.textureWidth = 32;

@@ -8,14 +8,15 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
 public class ModelLumberAxe extends ModelBase {
-    public ModelRenderer shape1;
-    public ModelRenderer shape2;
-    public ModelRenderer shape3;
-    public ModelRenderer shape4;
-    public ModelRenderer shape8;
-    public ModelRenderer shape8_1;
-    public ModelRenderer shape10;
-    public ModelRenderer shape11;
+
+    private ModelRenderer shape1;
+    private ModelRenderer shape2;
+    private ModelRenderer shape3;
+    private ModelRenderer shape4;
+    private ModelRenderer shape8;
+    private ModelRenderer shape8_1;
+    private ModelRenderer shape10;
+    private ModelRenderer shape11;
 
     public ModelLumberAxe() {
         this.textureWidth = 32;

@@ -1,3 +1,4 @@
+/**
 package com.ewyboy.hammertime.common.tools;
 
 import com.ewyboy.hammertime.common.loaders.CreativeTabLoader;
@@ -118,3 +119,4 @@ public class Excavator extends BaseTool {
         return super.onBlockStartBreak(stack, x, y, z, player);
     }
 }
+ */

@@ -1,3 +1,4 @@
+/**
 package com.ewyboy.hammertime.common.loaders;
 
 import com.ewyboy.hammertime.common.utillity.Logger;
@@ -30,3 +31,4 @@ public class RecipeLoader {
         Logger.info("Loading recipes finished after " + watch.elapsed(TimeUnit.MILLISECONDS) + "ms");
     }
 }
+ */

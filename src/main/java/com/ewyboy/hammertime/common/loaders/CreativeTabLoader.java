@@ -1,3 +1,4 @@
+/**
 package com.ewyboy.hammertime.common.loaders;
 
 import com.ewyboy.hammertime.common.utillity.Reference;
@@ -17,3 +18,4 @@ public class CreativeTabLoader {
         public Item getTabIconItem() {return null;}
     };
 }
+ */
