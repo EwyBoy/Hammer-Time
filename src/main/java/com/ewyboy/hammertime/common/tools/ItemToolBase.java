@@ -29,34 +29,33 @@ public class ItemToolBase extends ItemPickaxe {
         GameRegistry.register(this);
     }
 
-    protected RayTraceResult traceFromEntity(World world, EntityPlayer player, boolean par3, double range){
+    protected RayTraceResult traceFromEntity(World world, EntityPlayer player, boolean stopOnLiquids, double range){
         float angel = 0.017453292F;
-        float f = 1.0F;
-        float f1 = player.prevRotationPitch + (player.rotationPitch - player.prevRotationPitch) * f;
-        float f2 = player.prevRotationYaw + (player.rotationYaw - player.prevRotationYaw) * f;
-        double d0 = player.prevPosX + (player.posX - player.prevPosX) * (double) f;
-        double d1 = player.prevPosY + (player.posY - player.prevPosY) * (double) f;
+        float pitch = player.prevRotationPitch + (player.rotationPitch - player.prevRotationPitch);
+        float yaw = player.prevRotationYaw + (player.rotationYaw - player.prevRotationYaw);
+        double x = player.prevPosX + (player.posX - player.prevPosX);
+        double y = player.prevPosY + (player.posY - player.prevPosY);
+        double z = player.prevPosZ + (player.posZ - player.prevPosZ);
 
         if (!world.isRemote && player instanceof EntityPlayer){
-            d1 += 1.62D;
+            y += 1.62D;
         }
 
-        double d2 = player.prevPosZ + (player.posZ - player.prevPosZ) * (double) f;
-        Vec3d vec3 = new Vec3d(d0, d1, d2);
-        float f3 = MathHelper.cos(-f2 * angel - (float) Math.PI);
-        float f4 = MathHelper.sin(- f2 * angel - (float) Math.PI);
-        float f5 = -MathHelper.cos(-f1 * angel);
-        float f6 = MathHelper.sin(- f1 * angel);
-        float f7 = f4 * f5;
-        float f8 = f3 * f5;
-        double d3 = range;
+        Vec3d vec3 = new Vec3d(x, y, z);
+        float val1 = MathHelper.cos(-yaw * angel - (float)Math.PI);
+        float val2 = MathHelper.sin(-yaw * angel - (float)Math.PI);
+        float val3 = -MathHelper.cos(-pitch * angel);
+        float val4 = MathHelper.sin(-pitch * angel);
+        float val5 = val2 * val3;
+        float val6 = val1 * val3;
+        double rangeCopy = range;
 
         if (player instanceof EntityPlayerMP){
-            d3 = ((EntityPlayerMP)player).interactionManager.getBlockReachDistance();
+            rangeCopy = ((EntityPlayerMP)player).interactionManager.getBlockReachDistance();
         }
 
-        Vec3d vec31 = vec3.addVector((double) f7 * d3, (double) f6 * d3, (double) f8 * d3);
-        return world.rayTraceBlocks(vec3, vec31, par3, !par3, par3);
+        Vec3d vec31 = vec3.addVector((double)val5 * rangeCopy, (double)val4 * rangeCopy, (double)val6 * rangeCopy);
+        return world.rayTraceBlocks(vec3, vec31, stopOnLiquids, !stopOnLiquids, stopOnLiquids);
     }
 
 }
