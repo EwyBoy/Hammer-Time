@@ -1,5 +1,6 @@
 package com.ewyboy.hammertime;
 
+import com.ewyboy.hammertime.common.loaders.ToolLoader;
 import com.ewyboy.hammertime.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -22,6 +23,7 @@ public class HammerTime {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
+        ToolLoader.preInit();
         PROXY.preInit(event);
     }
 
