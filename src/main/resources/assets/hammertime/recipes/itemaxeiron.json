@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "hammertime:itemaxeiron",
+        "count": 1
+    },
+    "pattern": [
+        "xxx",
+        "xxi",
+        "  i"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "x": {
+            "item": "minecraft:iron_ingot"
+        },
+        "i": {
+            "item": "minecraft:stick"
+        }
+    }
+}

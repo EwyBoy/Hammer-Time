@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "hammertime:itemaxegold",
+        "count": 1
+    },
+    "pattern": [
+        "xxx",
+        "xxi",
+        "  i"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "x": {
+            "item": "minecraft:gold_ingot"
+        },
+        "i": {
+            "item": "minecraft:stick"
+        }
+    }
+}

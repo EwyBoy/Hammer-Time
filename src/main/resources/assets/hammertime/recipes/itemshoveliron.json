@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "hammertime:itemshoveliron",
+        "count": 1
+    },
+    "pattern": [
+        " xx",
+        " ix",
+        "i  "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "x": {
+            "item": "minecraft:iron_ingot"
+        },
+        "i": {
+            "item": "minecraft:stick"
+        }
+    }
+}

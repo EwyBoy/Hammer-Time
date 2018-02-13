@@ -1,0 +1,22 @@
+{
+    "result": {
+        "item": "hammertime:itemhammerstone",
+        "count": 1
+    },
+    "pattern": [
+        "xxx",
+        "xix",
+        " i "
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "x": {
+            "item": "minecraft:stone",
+            "data": 0
+
+        },
+        "i": {
+            "item": "minecraft:stick"
+        }
+    }
+}
