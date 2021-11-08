@@ -1,0 +1,6 @@
+{
+	"parent": "hammertime:item/lumberaxe",
+	"textures": {
+		"head": "minecraft:block/iron_block"
+	}
+}

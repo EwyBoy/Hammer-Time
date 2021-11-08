@@ -1,0 +1,6 @@
+{
+	"parent": "hammertime:item/hammer",
+	"textures": {
+		"head": "minecraft:block/netherite_block"
+	}
+}

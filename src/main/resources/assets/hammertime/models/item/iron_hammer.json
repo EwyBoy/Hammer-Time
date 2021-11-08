@@ -1,0 +1,6 @@
+{
+	"parent": "hammertime:item/hammer",
+	"textures": {
+		"head": "minecraft:block/iron_block"
+	}
+}

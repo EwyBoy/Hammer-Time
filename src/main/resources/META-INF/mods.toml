@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT License"
+issueTrackerURL="https://github.com/EwyBoy/Hammer-Time/issues"
+
+[[mods]]
+modId="hammertime"
+version="${file.jarVersion}"
+displayName="Template"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/Mod-Name"
+credits=""
+authors="Ewy"
+description="It's Hammer Time!"
+
+[[dependencies.hammertime]]
+modId="forge"
+mandatory=true
+versionRange="[36,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.hammertime]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5, 1.17)"
+ordering="NONE"
+side="BOTH"

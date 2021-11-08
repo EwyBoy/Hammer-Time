@@ -1,0 +1,6 @@
+{
+	"parent": "hammertime:item/hammer",
+	"textures": {
+		"head": "minecraft:block/daylight_detector_side"
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTimebuildHammerTime",
+			"script": "build",
+			"description": "Assembles and tests this project.",
+			"group": "build",
+			"project": "HammerTime",
+			"buildFile": "C:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTime\\build.gradle",
+			"rootProject": "HammerTime",
+			"projectFolder": "c:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTime",
+			"workspaceFolder": "c:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTime",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: build"
+		},
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTimegenVSCodeRunsHammerTime",
+			"script": "genVSCodeRuns",
+			"description": "",
+			"group": "forgegradle runs",
+			"project": "HammerTime",
+			"buildFile": "C:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTime\\build.gradle",
+			"rootProject": "HammerTime",
+			"projectFolder": "c:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTime",
+			"workspaceFolder": "c:\\Users\\Eivind\\Documents\\Development\\Modding\\Forge\\HammerTime",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: genVSCodeRuns"
+		}
+	]
+}
