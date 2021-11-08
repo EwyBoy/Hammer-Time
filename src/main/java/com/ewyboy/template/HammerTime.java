@@ -23,17 +23,6 @@ public class HammerTime {
     }
 
     public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
-
-       /* @Override
-        public void fillItemList(NonNullList<ItemStack> itemStacks) {
-
-            for (Item item : ForgeRegistries.ITEMS) {
-                itemStacks.add(new ItemStack(item));
-            }
-
-            super.fillItemList(itemStacks);
-        }*/
-
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ToolRegister.TOOLS.NETHERITE_HAMMER);

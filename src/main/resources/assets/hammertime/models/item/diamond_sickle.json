@@ -1,0 +1,6 @@
+{
+	"parent": "hammertime:item/sickle",
+	"textures": {
+		"head": "minecraft:block/diamond_block"
+	}
+}
