@@ -11,5 +11,17 @@
   "item.hammertime.iron_spade": "Iron Spade",
   "item.hammertime.gold_spade": "Gold Spade",
   "item.hammertime.diamond_spade": "Diamond Spade",
-  "item.hammertime.netherite_spade": "Netherite Spade"
+  "item.hammertime.netherite_spade": "Netherite Spade",
+  "item.hammertime.wooden_lumberaxe": "Wooden Lumberaxe",
+  "item.hammertime.stone_lumberaxe": "Stone Lumberaxe",
+  "item.hammertime.iron_lumberaxe": "Iron Lumberaxe",
+  "item.hammertime.gold_lumberaxe": "Gold Lumberaxe",
+  "item.hammertime.diamond_lumberaxe": "Diamond Lumberaxe",
+  "item.hammertime.netherite_lumberaxe": "Netherite Lumberaxe",
+  "item.hammertime.wooden_sickle": "Wooden Sickle",
+  "item.hammertime.stone_sickle": "Stone Sickle",
+  "item.hammertime.iron_sickle": "Iron Sickle",
+  "item.hammertime.gold_sickle": "Gold Sickle",
+  "item.hammertime.diamond_sickle": "Diamond Sickle",
+  "item.hammertime.netherite_sickle": "Netherite Sickle"
 }
