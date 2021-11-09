@@ -7,6 +7,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.tags.Tag;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
@@ -19,6 +20,7 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.BlockEvent;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,15 +69,60 @@ public class BlockBreaker {
 
                             //serverPlayer.connection.send(new SPacket);
                         }
-
                     }
-
                 }
-
             }
         }
-
     }
+
+    public static boolean detectTree(World level, BlockPos pos, Block wood) {
+        int height = pos.getY();
+        boolean foundTop = false;
+
+        do {
+            height++;
+            BlockState block = level.getBlockState(new BlockPos(pos.getX(), height, pos.getZ()));
+            if (block.getBlock() != wood) {
+                height--;
+                foundTop = true;
+            }
+        } while (!foundTop);
+
+        int numLeaves = 0;
+
+        if (height - pos.getY() < 50) {
+            for (int xPos = pos.getX() - 1; xPos <= pos.getX() + 1; xPos++) {
+                for (int yPos = height - 1; yPos <= height + 1; yPos++) {
+                    for (int zPos = pos.getZ() - 1; zPos <= pos.getZ() + 1; zPos++) {
+                        BlockState leaves = level.getBlockState(new BlockPos(xPos, yPos, zPos));
+                        if (leaves.is(leaves.getBlock())) numLeaves++;
+                    }
+                }
+            }
+        }
+        return numLeaves > 3;
+    }
+
+    public static void destroy(@Nonnull Tree tree, @Nonnull PlayerEntity player, @Nonnull ItemStack tool){
+        World world = tree.getWorld();
+        int toolUsesLeft = tool.isDamageableItem() ? (tool.getMaxDamage() - tool.getDamageValue()) : Integer.MAX_VALUE;
+
+        if(toolUsesLeft <= 1){
+            //player.sendMessage(new TranslationTextComponent("chat.fallingtree.prevented_break_tool"), NIL_UUID);
+            return;
+        }
+
+        tree.getLastSequencePart()
+                .map(TreeSection :: getBlockPos)
+                .ifPresent(logBlock -> {
+                    final BlockState logState = world.getBlockState(logBlock);
+                    //player.awardStat(ITEM_USED.get(logState.getBlock().asItem()));
+                    logState.getBlock().playerDestroy(world, player, tree.getHitPos(), logState, world.getBlockEntity(logBlock), tool);
+                    world.removeBlock(logBlock, false);
+                }
+        );
+    }
+
 
     // TODO remove ??
     private static void dropLoot(World level, List<ItemStack> stacks, BlockPos pos) {
